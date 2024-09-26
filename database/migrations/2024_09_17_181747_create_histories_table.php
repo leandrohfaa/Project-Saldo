@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('histories', function (Blueprint $table) {
-            $table->id();
+            $table->incrementsid('id');
             $table->timestamps();
+            
         });
     }
 
